@@ -44,7 +44,7 @@
     </div>
     
   </nav>
-  <form action="{% url 'create' %}" method="POST">
+  <form action="{% url 'create' %}" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
   <div class="mx-14 mt-10 border-2 border-blue-400 rounded-lg">
     <div class="mt-10 text-center font-bold">Contact</div>
